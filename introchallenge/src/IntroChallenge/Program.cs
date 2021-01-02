@@ -4,14 +4,13 @@ using System.IO;
 class Solution {
 
     static int solveMeFirst(int a, int b) { 
-      if(a <= 0 || b >= 1000){
-        Console.WriteLine("Variables provided are out of bounds");
-        return 0;
-      }
-      else{
-          return a+b;
-      }
-      
+        if(a >= 0 && b <= 1000){
+            return a+b;
+        }
+        else{
+            Console.WriteLine("Variables provided are out of bounds");
+            return 0;
+        }     
     }
 
     static void Main(String[] args) {
